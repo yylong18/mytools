@@ -138,7 +138,7 @@ binaryDownload() {
  
 binariesInstall() {
   echo "===> Downloading version ${FABRIC_TAG} platform specific fabric binaries"
-  binaryDownload ${BINARY_FILE} https://github.com/hyperledger/fabric/releases/download/v${VERSION}/${BINARY_FILE}
+  #binaryDownload ${BINARY_FILE} https://github.com/hyperledger/fabric/releases/download/v${VERSION}/${BINARY_FILE}
   #https://nexus.hyperledger.org/content/repositories/releases/org/hyperledger/fabric/hyperledger-fabric/${ARCH}-${VERSION}/${BINARY_FILE}
   if [ $? -eq 22 ]; then
      echo
@@ -147,7 +147,7 @@ binariesInstall() {
    fi
 
   echo "===> Downloading version ${CA_TAG} platform specific fabric-ca-client binary"
-  binaryDownload ${CA_BINARY_FILE} https://github.com/hyperledger/fabric-ca/releases/download/v${CA_VERSION}/${CA_BINARY_FILE}
+  #binaryDownload ${CA_BINARY_FILE} https://github.com/hyperledger/fabric-ca/releases/download/v${CA_VERSION}/${CA_BINARY_FILE}
   #https://nexus.hyperledger.org/content/repositories/releases/org/hyperledger/fabric-ca/hyperledger-fabric-ca/${ARCH}-${CA_VERSION}/${CA_BINARY_FILE}
   if [ $? -eq 22 ]; then
      echo
